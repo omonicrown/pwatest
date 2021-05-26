@@ -1,6 +1,6 @@
 {
-    "short_name":"PWA App",
-    "name":"pwa test app",
+    "short_name":"test App",
+    "name":"Welcome to PWA",
     "icons":[
         {
             "src":"/images/icon3.png",
