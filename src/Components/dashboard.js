@@ -33,12 +33,14 @@ class Dashboard extends React.Component {
        this.setState({subscriptions: data22,loading:false})
        
      }
+    
     render(){
-
+        
 
         return (
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                
+     
+               
                 <div class="row gx-10">
                     <div class="col-md-6 col-lg-6" style={{padding:'60px 60px'}}>
                     <Jumbotron style={{backgroundColor:'#ff66d9',borderRadius:'20px'}}>
