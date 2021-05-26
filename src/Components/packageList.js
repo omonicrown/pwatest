@@ -51,7 +51,7 @@ class PackageList extends React.Component {
               method:'DELETE',
             })
             .then(res => res.json())
-            .then(() => window.location.href = "http://localhost:3000/show/")
+            .then(() => window.location.href = "https://master.d13r0ijqtj3xwd.amplifyapp.com/show/")
     }
 
 

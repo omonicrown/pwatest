@@ -53,7 +53,7 @@ class UpdateSubscription extends React.Component{
         })
       })
       .then(res => res.json())
-      .then(() => window.location.href = "http://localhost:3004/subscription")
+      .then(() => window.location.href = "https://master.d13r0ijqtj3xwd.amplifyapp.com/subscription")
     
   }
 

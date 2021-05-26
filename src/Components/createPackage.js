@@ -23,7 +23,7 @@ class createPackage extends React.Component{
     console.log(this.state)
     axios.post('https://senshost.com:8002/api/Package',this.state)
     .then(() => 
-    window.location.href = "https://localhost:3004/show/").catch(error => {
+    window.location.href = "https://master.d13r0ijqtj3xwd.amplifyapp.com/show/").catch(error => {
       console.log(error)
     })
   }

@@ -29,17 +29,17 @@ submitHandler = e => {
   this.state.startDate = document.getElementById('sdate').value
   this.state.creationDate = document.getElementById('cdate').value
   console.log(this.state)
-  axios.post('http://senshost.com:8002/api/Subscription',this.state)
+  axios.post('https://senshost.com:8002/api/Subscription',this.state)
   .then(() => 
-  window.location.href = "http://localhost:3004/subscription").catch(error => {
+  window.location.href = "https://master.d13r0ijqtj3xwd.amplifyapp.com/subscription").catch(error => {
     console.log(error)
   })
 }
 
   async componentDidMount(){
       
-    const url = "http://senshost.com:8002/api/Package/PageNumber=1/PageSize=10";
-    const url2 = "http://senshost.com:8002/api/Package/";
+    const url = "https://senshost.com:8002/api/Package/PageNumber=1/PageSize=10";
+    const url2 = "https://senshost.com:8002/api/Package/";
     const response = await fetch(url);
     const data2 = await response.json();
     //console.log(data2)

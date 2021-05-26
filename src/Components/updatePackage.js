@@ -46,7 +46,7 @@ class UpdatePackage extends React.Component{
         })
       })
       .then(res => res.json())
-      .then(() => window.location.href = "http://localhost:3004/show/")
+      .then(() => window.location.href = "https://master.d13r0ijqtj3xwd.amplifyapp.com/show/")
     
   }
 
