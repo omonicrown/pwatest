@@ -20,13 +20,13 @@ class Dashboard extends React.Component {
     async componentDidMount(){
       
         //fetching all the package data
-        const url = "http://senshost.com:8002/api/Package/PageNumber=1/PageSize=10";
+        const url = "https://senshost.com:8002/api/Package/PageNumber=1/PageSize=10";
         const response = await fetch(url);
         const data2 = await response.json();
         this.setState({packages: data2,loading:false})
 
         //fetching all the subscription data
-        const url22 = "http://senshost.com:8002/api/Subscription/PageNumber=1/PageSize=10";
+        const url22 = "https://senshost.com:8002/api/Subscription/PageNumber=1/PageSize=10";
        const response22 = await fetch(url22);
        const data22 = await response22.json();
     

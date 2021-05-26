@@ -28,8 +28,8 @@ class PackageList extends React.Component {
  
     async componentDidMount(){
       
-       const url = "http://senshost.com:8002/api/Package/PageNumber=1/PageSize=10";
-       const url2 = "http://senshost.com:8002/api/Package/";
+       const url = "https://senshost.com:8002/api/Package/PageNumber=1/PageSize=10";
+       const url2 = "https://senshost.com:8002/api/Package/";
        const response = await fetch(url);
        const data2 = await response.json();
     
@@ -46,7 +46,7 @@ class PackageList extends React.Component {
 
     
     const  usethedelete = (user) => {
-      const url2 = "http://senshost.com:8002/api/Package";
+      const url2 = "https://senshost.com:8002/api/Package";
       fetch(`${url2}/${user.id}`, {
               method:'DELETE',
             })

@@ -36,7 +36,7 @@ class UpdateSubscription extends React.Component{
     this.state.creationDate = document.getElementById('cdate').value
     this.state.idd = document.getElementById('idd').value
     
-    const url2 = "http://senshost.com:8002/api/Subscription";
+    const url2 = "https://senshost.com:8002/api/Subscription";
       await fetch(`${url2}/${this.state.idd}`,{
         method: 'PUT',
         headers: {
@@ -59,8 +59,8 @@ class UpdateSubscription extends React.Component{
 
   async componentDidMount(){
       
-    const url = "http://senshost.com:8002/api/Package/PageNumber=1/PageSize=10";
-    const url2 = "http://senshost.com:8002/api/Package/";
+    const url = "https://senshost.com:8002/api/Package/PageNumber=1/PageSize=10";
+    const url2 = "https://senshost.com:8002/api/Package/";
     const response = await fetch(url);
     const data2 = await response.json();
     //console.log(data2)

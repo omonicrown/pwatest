@@ -24,8 +24,8 @@ class Subscription extends React.Component {
   
     async componentDidMount(){
      
-       const url = "http://senshost.com:8002/api/Subscription/PageNumber=1/PageSize=10";
-       const url2 = "http://senshost.com:8002/api/Package/";
+       const url = "https://senshost.com:8002/api/Subscription/PageNumber=1/PageSize=10";
+       const url2 = "https://senshost.com:8002/api/Package/";
        const response = await fetch(url);
        const data2 = await response.json();
     
@@ -39,13 +39,13 @@ class Subscription extends React.Component {
     render() {
 
     const  usethedelete = (user) => {
-      const url2 = "http://senshost.com:8002/api/Subscription";
+      const url2 = "https://senshost.com:8002/api/Subscription";
      // console.log(user.name)
       fetch(`${url2}/${user.id}`, {
               method:'DELETE',
             })
             .then(res => res.json())
-            .then(() => window.location.href = "http://localhost:3000/subscription")
+            .then(() => window.location.href = "https://localhost:3000/subscription")
     }
 
 

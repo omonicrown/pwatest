@@ -30,7 +30,7 @@ class UpdatePackage extends React.Component{
     this.state.packageDefination = document.getElementById('pdef').value
     this.state.creationDate = document.getElementById('pcd').value
     this.state.id = document.getElementById('pid').value
-    const url2 = "http://senshost.com:8002/api/Package";
+    const url2 = "https://senshost.com:8002/api/Package";
       await fetch(`${url2}/${this.state.id}`,{
         method: 'PUT',
         headers: {

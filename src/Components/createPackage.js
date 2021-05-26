@@ -21,9 +21,9 @@ class createPackage extends React.Component{
   submitHandler = e => {
     e.preventDefault()
     console.log(this.state)
-    axios.post('http://senshost.com:8002/api/Package',this.state)
+    axios.post('https://senshost.com:8002/api/Package',this.state)
     .then(() => 
-    window.location.href = "http://localhost:3004/show/").catch(error => {
+    window.location.href = "https://localhost:3004/show/").catch(error => {
       console.log(error)
     })
   }
