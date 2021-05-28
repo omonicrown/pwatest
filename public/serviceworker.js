@@ -27,6 +27,8 @@ self.addEventListener('fetch', (event) => {
 });
 
 // Activate the SW
+
+//this is a new commit
 self.addEventListener('activate', (event) => {
     const cacheWhitelist = [];
     cacheWhitelist.push(CACHE_NAME);
