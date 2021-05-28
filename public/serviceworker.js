@@ -1,4 +1,4 @@
-const CACHE_NAME = "version-2pro";
+const CACHE_NAME = "pwatest";
 const urlsToCache = [ 'index.html', 'offline.html' ];
 
 const self = this;

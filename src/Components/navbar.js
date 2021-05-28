@@ -27,12 +27,12 @@ export const NavigationBar = () => {
 return (
     <Navbar  expand="md" style={{backgroundColor:'grey',color:'blue'}} >
       <Container>
-    <Navbar.Brand href="/"><b>Interview 2</b></Navbar.Brand>
+    <Navbar.Brand href="./"><b>Interview 2</b></Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav"  >
       <Nav className="justify-content-end" >
-        <Nav.Link href="/show" >Packages</Nav.Link>
-        <Nav.Link href="/subscription">Subscriptions</Nav.Link>
+        <Nav.Link href="./show" >Packages</Nav.Link>
+        <Nav.Link href="./subscription">Subscriptions</Nav.Link>
         
       </Nav>
     </Navbar.Collapse>
